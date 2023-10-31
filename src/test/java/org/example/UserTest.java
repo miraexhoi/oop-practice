@@ -14,7 +14,7 @@ class UserTest {
         User user = new User();
 
         // when
-        user.initPassword();
+        user.initPassword(new RandomPasswordGenerator());
 
         //then
         assertThat(user.getPassword()).isNotNull();
