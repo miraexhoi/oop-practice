@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.password.RandomPasswordGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
