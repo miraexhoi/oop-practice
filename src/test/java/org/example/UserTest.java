@@ -16,7 +16,7 @@ class UserTest {
         // when
         user.initPassword(new RandomPasswordGenerator());
 
-        //then
+        // then
         assertThat(user.getPassword()).isNotNull();
     }
 
@@ -29,7 +29,7 @@ class UserTest {
         // when
         user.initPassword(new WrongFixedPasswordGenerator());
 
-        //then
+        // then
         assertThat(user.getPassword()).isNull();
     }
 }
