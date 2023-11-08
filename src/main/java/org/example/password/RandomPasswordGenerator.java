@@ -15,26 +15,23 @@ public class RandomPasswordGenerator implements org.example.PasswordGenerator {
 
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;
         CharacterRule characterRule = new CharacterRule(lowerCaseChars);
-        lowerCaseChars.setNumberOfCharacters(2);
 
         CharacterData upperCaseChars = EnglishCharacterData.UpperCase;
         CharacterRule upperCaseRules = new CharacterRule(upperCaseChars);
-        lowerCaseChars.setNumberOfCharacters(2);
 
-        CharacterData specialChars = new CharacterData() {
-            @Override
-            public String getErrorCode() {
-                return ERROR_CODE;
-            }
-
-            @Override
-            public String getCharacters() {
-                return ALLOWED_SPL_CHARACTERS;
-            }
-            CharacterRule splCharRule = new CharacterRule(specialChars);
-            CharacterRule.setNumberOfCharacters(2);
-
-            return gen.generatePassword((int)(Math.random() * 13), splCharRule, lowerCaseRule, upperCaseRule, digitRule);
-        }
+//        CharacterData specialChars = new CharacterData() {
+//            @Override
+//            public String getErrorCode() {
+//                return ERROR_CODE;
+//            }
+//
+//            @Override
+//            public String getCharacters() {
+//                return ALLOWED_SPL_CHARACTERS;
+//            }
+//            CharacterRule splCharRule = new CharacterRule(specialChars);
+//
+            return gen.generatePassword((int)(Math.random() * 13));
+//        };
     }
 }
