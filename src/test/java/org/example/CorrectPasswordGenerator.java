@@ -1,6 +1,6 @@
 package org.example;
 
-public class CorrectFixedPasswordGenerator implements PasswordGenerator{
+public class CorrectPasswordGenerator implements PasswordGenerator{
     @Override
     public String generatePassword() {
         return "abcdefgh"; // 8글자
