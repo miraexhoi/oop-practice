@@ -1,6 +1,6 @@
 package org.example;
 
-public class WrongPasswordGenerator implements PasswordGenerator{
+public class WrongPasswordGenerator implements PasswordGeneratePolicy {
     @Override
     public String generatePassword() {
         return "ab"; // 2글자

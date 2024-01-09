@@ -1,11 +1,9 @@
 package org.example;
 
-import org.example.password.RandomPasswordGenerator;
-
 public class User {
     private String password;
 
-    public void initPassword(PasswordGenerator passwordGenerator) {
+    public void initPassword(PasswordGeneratePolicy passwordGenerator) {
         // as - is 방식
         RandomPasswordGenerator randomPasswordGenerator = new RandomPasswordGenerator();
         String password = passwordGenerator.generatePassword();
