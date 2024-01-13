@@ -1,4 +1,4 @@
-package org.example;
+package org.example.password;
 
 @FunctionalInterface
 public interface PasswordGeneratePolicy {

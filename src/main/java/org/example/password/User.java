@@ -1,4 +1,7 @@
-package org.example;
+package org.example.password;
+
+import org.example.password.PasswordGeneratePolicy;
+import org.example.password.RandomPasswordGenerator;
 
 public class User {
     private String password;
