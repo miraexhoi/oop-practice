@@ -16,3 +16,8 @@
 **캡슐화 구현 방법**
 - 접근제어자(access modifiers)를 활용 (private)
 - 멤버 변수에 값을 넣고 꺼내 올 수 있는 메서드를 생성 (getter, setter)
+
+### 추상화
+불필요한 세부 사항들은 제거하고 가장 본질적이고 공통적인 부분만을 추출하여 표현
+- 추상 클래스(abstract class)
+- 인터페이스(interface)
